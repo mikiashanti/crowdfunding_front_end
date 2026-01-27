@@ -1,7 +1,7 @@
 import { allFundraisers } from "../data";
 import FundraiserCard from "../components/FundraiserCard";
 import "./HomePage.css";
-
+//trial comment
 function HomePage() {
     return (
         <div id="fundraiser-list">
