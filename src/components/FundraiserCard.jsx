@@ -3,10 +3,11 @@ import "./FundraiserCard.css";
 
 function FundraiserCard(props) {
     const { fundraiserData } = props;
+    const fundraiserLink = `fundraisers/${fundraiserData.id}`; //previous error - had singular "fundraiser"
 
     return (
     <div className="fundraiser-card">
-        <Link to="/fundraiser">
+        <Link to={fundraiserLink}>
         <img src={fundraiserData.image} />
         <h3>{fundraiserData.title}</h3>
         </Link>

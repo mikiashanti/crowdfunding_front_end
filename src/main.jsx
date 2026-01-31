@@ -14,7 +14,7 @@ const router = createBrowserRouter([
       element: <Layout />,
       children: [
           { path: "/", element: <HomePage /> },
-          { path: "/fundraiser", element: <FundraiserPage /> },
+          { path: "/fundraisers/:id", element: <FundraiserPage /> }, //previously has singular fundraiser
       ],
   },
 ]);
