@@ -4,7 +4,7 @@ import "./FundraiserCard.css";
 function FundraiserCard(props) {
     const { fundraiserData } = props;
     const fundraiserLink = `fundraisers/${fundraiserData.id}`; //previous error - had singular "fundraiser"
-
+    
     return (
     <div className="fundraiser-card">
         <Link to={fundraiserLink}>
