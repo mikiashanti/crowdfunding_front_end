@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import getFundraisers from "../api/get-fundraisers";
 
 export default function useFundraisers() {
@@ -22,7 +21,7 @@ export default function useFundraisers() {
         setError(error);
         setIsLoading(false);
         });
-    }, []);
+    }, []); // dependencies would be included in this container
 
   // Finally, we return the state variables and the error. As the state in this hook changes it will update these values and the component using this hook will re-render.
     return { fundraisers, isLoading, error };
