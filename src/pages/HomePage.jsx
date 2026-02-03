@@ -1,11 +1,15 @@
 import useFundraisers from "../hooks/use-fundraisers";
 import FundraiserCard from "../components/FundraiserCard";
 import "./HomePage.css";
+import logo from './src/assets/img/logo.jpg';
+
 //trial comment
 function HomePage() {
-    const { fundraisers } = useFundraisers(); 
+    const { fundraisers } = useFundraisers();
+    
     return (
         <div id="fundraiser-list">
+            <img src= {logo} />;
             {fundraisers.map((fundraiserData, key) => {
                 return <FundraiserCard key={key} fundraiserData={fundraiserData} />;  
             })}
