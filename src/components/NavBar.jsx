@@ -15,6 +15,8 @@ function NavBar() {
             <ul>
             <li>
         <Link to="/">Home</Link>
+        </li>
+        <li>
         {auth.token ? (
             <Link to="/" onClick={handleLogout}>
                     Log Out
@@ -22,6 +24,9 @@ function NavBar() {
             ) : (
             <Link to="/login">Login</Link>
         )}
+        </li>
+        <li>
+        <Link to="/create">Create new"</Link>
         </li>
         </ul>
         </nav>
