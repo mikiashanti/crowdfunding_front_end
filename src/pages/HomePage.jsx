@@ -1,7 +1,7 @@
 import useFundraisers from "../hooks/use-fundraisers";
 import FundraiserCard from "../components/FundraiserCard";
 import "./HomePage.css";
-import logo from './src/assets/img/logo.jpg';
+import logo from 'src/assets/img/logo.jpg';
 
 //trial comment
 function HomePage() {
