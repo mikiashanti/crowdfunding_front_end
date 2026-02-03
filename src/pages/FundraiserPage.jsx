@@ -19,7 +19,7 @@ function FundraiserPage() {
     return (
         <div>
             <h2>{fundraiser.title}</h2>
-            <img src ={fundraiser.image}>
+            <img src={fundraiserData.image} />
             <h3>Description: {fundraiser.description}</h3>
             <h3>Created at: {fundraiser.date_created}</h3>
             <h3>{`Open: ${fundraiser.is_open}`}</h3>
