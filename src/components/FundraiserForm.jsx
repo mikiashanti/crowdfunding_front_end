@@ -6,7 +6,6 @@ export default function FundraiserForm() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [goal, setGoal] = useState("");
-  const [deadline, setDeadline] = useState("");
   const [image, setImage] = useState(""); // image URL
   const navigate = useNavigate();
   const { auth } = useAuth();
@@ -21,12 +20,12 @@ export default function FundraiserForm() {
       const payload = {
         title,
         description,
-        goal,
-        deadline,
+        goal: Number(goal),
         image, // URL string
+        is_open: true,
       };
 
-      const url = `${import.meta.env.VITE_API_URL}/fundraisers`;
+      const url = `${import.meta.env.VITE_API_URL}/fundraisers/`;
       const headers = {
         "Content-Type": "application/json",
       };
@@ -80,12 +79,6 @@ export default function FundraiserForm() {
         onChange={(e) => setGoal(e.target.value)}
         placeholder="Goal (USD)"
         required
-      />
-
-      <input
-        type="date"
-        value={deadline}
-        onChange={(e) => setDeadline(e.target.value)}
       />
 
       {/* IMAGE URL INPUT */}

@@ -26,7 +26,7 @@ function NavBar() {
         )}
         </li>
         <li>
-        <Link to="/create">Create</Link>
+        <Link to="/create">Create Fundraiser</Link>
         </li>
         </ul>
         </nav>

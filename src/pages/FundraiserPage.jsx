@@ -17,9 +17,9 @@ function FundraiserPage() {
 
 
     return (
-        <div>
+        <div style={{ backgroundColor: "beige" }}>
             <h2>{fundraiser.title}</h2>
-            <img src={fundraiser.image} />
+            <img src={fundraiser.image} width="300" height ="250"/>
             <h3>Description: {fundraiser.description}</h3>
             <h3>Created at: {fundraiser.date_created}</h3>
             <h3>{`Open: ${fundraiser.is_open}`}</h3>
