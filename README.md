@@ -6,11 +6,11 @@ https://velvety-torrone-13b59b.netlify.app/
 Screenshot of the homepage
 
 ## Fundraiser creation page
-### Screenshot of the fundraiser creation page
+Screenshot of the fundraiser creation page
 
 ## Fundraiser creation form
-### A screenshot of the fundraiser creation form
+A screenshot of the fundraiser creation form
 
 ## Fundraiser
-### A screenshot of a fundraiser with pledges
+A screenshot of a fundraiser with pledges
 
