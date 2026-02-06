@@ -7,7 +7,7 @@ function Layout() {
         <img src="./src/assets/img/logo.jpg" width="100" height ="100"/>
     <NavBar />
     <Outlet />
-    <footer>By Michaela Gyasi-Agyei</footer>
+    <footer>© 2026 Michaela Gyasi-Agyei</footer>
     </div>
     );
 }

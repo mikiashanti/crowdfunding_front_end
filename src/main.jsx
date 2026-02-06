@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
 import Layout from "./components/Layout.jsx";
+import FundraiserForm from "./components/FundraiserForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
           { path: "/", element: <HomePage /> },
           { path: "/login", element: <LoginPage /> },
           { path: "/fundraisers/:id", element: <FundraiserPage /> }, //previously has singular fundraiser
+          { path: "/create", element: <FundraiserForm /> }
       ],
   },
 ]);
