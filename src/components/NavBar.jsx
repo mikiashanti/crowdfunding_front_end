@@ -1,4 +1,4 @@
-import { Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import useAuth from "../hooks/use-auth.js";
 
 function NavBar() {
@@ -23,11 +23,15 @@ function NavBar() {
             </Link>
             ) : (
             <Link to="/login">Login</Link>
-        )}
+        )} or <Link to="/signup">Sign up</Link>
         </li>
         <li>
         <Link to="/create">Create Fundraiser</Link>
         </li>
+        <li>
+        <Link to="/pledge">Make a Pledge</Link>
+        </li>
+        
         </ul>
         </nav>
     </div>

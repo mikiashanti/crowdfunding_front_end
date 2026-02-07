@@ -14,3 +14,9 @@ A screenshot of the fundraiser creation form
 ## Fundraiser
 A screenshot of a fundraiser with pledges
 
+## 404 page
+A screenshot of the 404 page
+
+## Unauthoried access
+A screenshot of the page when an unauthorised user attempts to edit or delete a fundraiser
+

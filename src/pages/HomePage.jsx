@@ -1,7 +1,6 @@
 import useFundraisers from "../hooks/use-fundraisers";
 import FundraiserCard from "../components/FundraiserCard";
 import "./HomePage.css";
-//import kente from "../assets/img/kente.jpg"
 
 function HomePage() {
     const { fundraisers } = useFundraisers();
