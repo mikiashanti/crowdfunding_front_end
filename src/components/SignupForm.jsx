@@ -27,7 +27,7 @@ function SignupForm() {
     }
 
     try {
-      // 1️⃣ Create new user
+      
       const res = await fetch(`${import.meta.env.VITE_API_URL}/users/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -40,7 +40,6 @@ function SignupForm() {
         return alert(msg);
       }
 
-      // 2️⃣ Auto-login
       const loginRes = await fetch(`${import.meta.env.VITE_API_URL}/auth/token/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -55,7 +54,6 @@ function SignupForm() {
       window.localStorage.setItem("token", loginData.token);
       setAuth({ token: loginData.token });
 
-      // 3️⃣ Redirect
       navigate("/");
     } catch (err) {
       console.error(err);
