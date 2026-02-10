@@ -25,7 +25,7 @@ const router = createBrowserRouter([
           { path: "/fundraisers/:id", element: <FundraiserPage /> }, //previously has singular fundraiser
           { path: "/create", element: <FundraiserForm /> },
           { path: "/pledge", element: <PledgeForm /> },
-          { path: "/signup", element: <SignupForm /> }
+          { path: "/signup", element: <SignUpForm /> }
       ],
   },
 ]);
