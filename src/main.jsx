@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage.jsx";
 import FundraiserPage from "./pages/FundraiserPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NotFound from "./pages/NotFound.jsx";
-import SignUpForm from "./components/SignUpForm.jsx";
+import SignupForm from "./components/SignupForm.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
           { path: "/fundraisers/:id", element: <FundraiserPage /> }, //previously has singular fundraiser
           { path: "/create", element: <FundraiserForm /> },
           { path: "/pledge", element: <PledgeForm /> },
-          { path: "/signup", element: <SignUpForm /> }
+          { path: "/signup", element: <SignupForm /> }
       ],
   },
 ]);
