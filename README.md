@@ -15,3 +15,5 @@ https://velvety-torrone-13b59b.netlify.app/
 ## Unauthorised edit attempt
 ![A screenshot of the page when an unauthorised user attempts to edit a fundraiser](./src/assets/img/unauthorised_edit.png)
 
+## 404 page
+![A screenshot of the custom 404 page](./src/assets/img/404.png)
