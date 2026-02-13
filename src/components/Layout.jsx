@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
-import logo from "../assets/img/logo.jpg"; // Vite-friendly import
+import logo from "../assets/img/logo.jpg";
 
 function Layout() {
   return (

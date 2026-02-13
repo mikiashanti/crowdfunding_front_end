@@ -18,7 +18,6 @@ function FundraiserPage() {
     is_open: true,
   });
 
-  // Initialize formData when fundraiser loads
   if (fundraiser && !formData.title) {
     setFormData({
       title: fundraiser.title,
@@ -32,7 +31,6 @@ function FundraiserPage() {
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>{error.message}</p>;
 
-  // DELETE handler
   async function handleDelete() {
     if (!window.confirm("Are you sure you want to delete this fundraiser?")) return;
 
@@ -47,7 +45,7 @@ function FundraiserPage() {
 
       if (res.ok) {
         alert("Fundraiser deleted successfully!");
-        navigate("/"); // redirect to homepage or fundraiser list
+        navigate("/");
       } else {
         const errBody = await res.json().catch(() => null);
         const msg = errBody?.detail ?? errBody?.message ?? "Failed to delete fundraiser";
@@ -59,7 +57,6 @@ function FundraiserPage() {
     }
   }
 
-  // EDIT handler (PUT request)
   async function handleEditSubmit(e) {
     e.preventDefault();
 
@@ -83,7 +80,7 @@ function FundraiserPage() {
         const updatedFundraiser = await res.json();
         alert("Woayɛ adeɛ! Fundraiser updated successfully!");
         setIsEditing(false);
-        navigate(`/fundraisers/${updatedFundraiser.id}`); // refresh page
+        navigate(`/fundraisers/${updatedFundraiser.id}`);
       } else {
         const errBody = await res.json().catch(() => null);
         const msg = errBody?.detail ?? errBody?.message ?? "Failed to update fundraiser";

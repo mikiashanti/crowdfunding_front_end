@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       children: [
           { path: "/", element: <HomePage /> },
           { path: "/login", element: <LoginPage /> },
-          { path: "/fundraisers/:id", element: <FundraiserPage /> }, //previously has singular fundraiser
+          { path: "/fundraisers/:id", element: <FundraiserPage /> },
           { path: "/create", element: <FundraiserForm /> },
           { path: "/pledge", element: <PledgeForm /> },
           { path: "/signup", element: <SignupForm /> }
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
-     {/* Here we wrap our app in the router provider so they render */}
+     {/* */}
       <RouterProvider router={router} />
     </AuthProvider>
   </React.StrictMode>

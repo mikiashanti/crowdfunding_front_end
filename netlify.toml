@@ -2,7 +2,7 @@
   command = "npm ci --include=dev && npm run build"
   publish = "dist"
 
-[[redirects]]
+  [[redirects]]
   from = "/*"
-  to = "../pages/NotFound.jsx"
-  status = 404
+  to = "/index.html"
+  status = 200

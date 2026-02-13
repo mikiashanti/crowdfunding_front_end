@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../hooks/use-auth.js";
-import "./FundraiserForm.css"; // import the CSS
+import "./FundraiserForm.css";
 
 export default function FundraiserForm() {
   const [title, setTitle] = useState("");
